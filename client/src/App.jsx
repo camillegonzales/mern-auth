@@ -1,9 +1,19 @@
 import './App.css'
+import { Routes, Route } from 'react-router-dom';
+import Navbar from '../src/components/Navbar';
+import Home from './pages/Home';
+import Register from './pages/Register';
+import Login from './pages/Login'
 
 function App() {
   return (
     <>
-    <h1>Hello</h1>
+    <Navbar />
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/register' element={<Register />} />
+      <Route path='/login' element={<Login />} />
+    </Routes>
     </>
   )
 }
