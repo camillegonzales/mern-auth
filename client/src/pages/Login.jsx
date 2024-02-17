@@ -5,12 +5,12 @@ export default function Login() {
   const [data, setData] = useState({
     email: '',
     password: '',
-  })
+  });
 
   const loginUser = (e) => {
-    e.preventDefault()
-    axios.get('/')
-  }
+    e.preventDefault();
+    axios.get('/');
+  };
 
   return (
     <div>
@@ -22,5 +22,5 @@ export default function Login() {
         <button type='submit'>Login</button>
       </form>
     </div>
-  )
-}
+  );
+};

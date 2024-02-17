@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
@@ -8,4 +8,4 @@ export default function Navbar() {
       <Link to='/login'>Login</Link>
     </nav>
   )
-}
+};
