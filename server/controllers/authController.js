@@ -70,7 +70,7 @@ const loginUser = async (req, res) => {
         }
     } catch (error) {
         console.log(error);
-    }
+    };
 };
 
 const getProfile = (req, res) => {
